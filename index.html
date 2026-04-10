@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HPCI-SARL — Hygiène Prodige Com International</title>
+  <meta name="description"
+    content="Spécialiste du nettoyage industriel, de la maintenance et de l'assainissement en Afrique centrale et de l'Ouest.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts/hero_slider.js" defer></script>
+</head>
+
+<body data-root="./">
+
+  <!-- ════════════════════════════════════════
+       NAVBAR — fond blanc, ligne épurée (Style TotalEnergies)
+       ════════════════════════════════════════ -->
+
+  <!-- ════════════════════════════════════════
+       NAVBAR — fond blanc, ligne rouge
+       ════════════════════════════════════════ -->
+  <nav id="mainNav">
+    <div class="nav-inner">
+      <a href="./index.html" class="logo">
+        <img src="./images/logo/logo-hpci.png" alt="HPCI-SARL" style="height:48px;">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="./index.html" class="active">Accueil</a></li>
+        <li>
+          <a href="pages/a-propos.html">Qui sommes-nous ?</a>
+          <div class="dropdown">
+            <a href="pages/a-propos.html">À propos de nous</a>
+            <a href="pages/engagements.html">Nos engagements</a>
+            <a href="pages/equipe.html">Notre équipe</a>
+            <a href="pages/certifications.html">Nos certifications</a>
+          </div>
+        </li>
+        <li>
+          <a href="pages/services.html">Nos services</a>
+          <div class="dropdown">
+            <a href="pages/service-nettoyage-industriel.html">Nettoyage industriel</a>
+            <a href="pages/service-maintenance.html">Maintenance industrielle</a>
+            <a href="pages/service-nettoyage-pro.html">Nettoyage professionnel</a>
+            <a href="pages/service-bio-nettoyage.html">Bio nettoyage</a>
+            <a href="pages/service-phytosanitaire.html">Phytosanitaire</a>
+            <a href="pages/service-hse.html">Personnel HSE</a>
+            <a href="pages/service-engineering.html">Engineering</a>
+          </div>
+        </li>
+        <li><a href="pages/mediatheque.html">Médiathèque</a></li>
+        <li><a href="pages/actualite.html">Actualité</a></li>
+        <li><a href="pages/partenaires.html">Partenaires</a></li>
+        <li><a href="pages/contact.html" class="nav-cta">Nous contacter</a></li>
+      </ul>
+      <button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════════
+       HERO SLIDER — plein écran, ancré en bas
+       ════════════════════════════════════════ -->
+  <section class="hero-slider" aria-label="Carrousel principal">
+    <div class="hero-slides" id="heroSlides">
+
+      <!-- SLIDE 1 -->
+      <div class="hero-slide active" style="--theme-color: var(--brand-cyan);">
+        <div class="slide-visual">
+          <img src="./images/hero/hero-principal.jpg" alt="Nettoyage Industriel HPCI">
+        </div>
+        <div class="slide-content">
+          <div class="slide-content-inner">
+            <div class="slide-top">
+              <span class="slide-badge">Expertise &amp; Innovation depuis 2014</span>
+            </div>
+            <h1 class="slide-title">L'Excellence du Nettoyage<br>Industriel &amp; Professionnel</h1>
+            <p class="slide-desc">Leader panafricain de l'hygiène industrielle, HPCI-SARL offre des solutions sur mesure
+              pour sécuriser vos installations et maintenir la performance de vos opérations.</p>
+            <div class="slide-cta">
+              <a href="pages/services.html" class="btn-pill">En savoir plus</a>
+              <a href="pages/contact.html" class="btn-pill-outline">Demander un devis</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="hero-slide" style="--theme-color: var(--brand-blue-dark);"> <!-- Dark blue for environment contrast -->
+        <div class="slide-visual">
+          <img src="./images/services/phyto.jpg" alt="Traitement Phytosanitaire HPCI">
+        </div>
+        <div class="slide-content">
+          <div class="slide-content-inner">
+            <div class="slide-top">
+              <span class="slide-badge">Hygiène Environnementale</span>
+            </div>
+            <h1 class="slide-title">Traitement phytosanitaire et assainissement durable</h1>
+            <p class="slide-desc">Solutions sur mesure pour protéger vos sites, maîtriser les nuisibles et garantir un
+              cadre sain et conforme aux normes environnementales.</p>
+            <div class="slide-cta">
+              <a href="pages/service-phytosanitaire.html" class="btn-pill">En savoir plus</a>
+              <a href="pages/contact.html" class="btn-pill-outline">Contactez nos experts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="hero-slide" style="--theme-color: var(--brand-blue);">
+        <div class="slide-visual">
+          <img src="./images/services/HSE.jpg" alt="Personnel HSE HPCI">
+        </div>
+        <div class="slide-content">
+          <div class="slide-content-inner">
+            <div class="slide-top">
+              <span class="slide-badge">Santé, Sécurité, Environnement</span>
+            </div>
+            <h1 class="slide-title">Mise à disposition du personnel HSE</h1>
+            <p class="slide-desc">Fourniture de professionnels en santé, sécurité et environnement pour garantir la
+              conformité réglementaire et la gestion des risques.</p>
+            <div class="slide-cta">
+              <a href="pages/service-hse.html" class="btn-pill">En savoir plus</a>
+              <a href="pages/contact.html" class="btn-pill-outline">Réserver une équipe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 4 -->
+      <div class="hero-slide" style="--theme-color: var(--brand-blue-light);">
+        <div class="slide-visual">
+          <img src="./images/services/maintenance-industrielle.jpg" alt="Engineering HPCI">
+        </div>
+        <div class="slide-content">
+          <div class="slide-content-inner">
+            <div class="slide-top">
+              <span class="slide-badge">Bureau d'études &amp; Engineering</span>
+            </div>
+            <h1 class="slide-title">Bureau d'études et engineering</h1>
+            <p class="slide-desc">Appui technique, études de risques et solutions sur mesure pour optimiser la performance
+              et la sécurité de vos installations industrielles.</p>
+            <div class="slide-cta">
+              <a href="pages/service-engineering.html" class="btn-pill">En savoir plus</a>
+              <a href="pages/contact.html" class="btn-pill-outline">Demander une étude</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.hero-slides -->
+
+    <!-- Navigation flèches -->
+    <div class="hero-nav">
+      <button id="heroPrev" aria-label="Diapositive précédente"><i class="fa-solid fa-chevron-left"></i></button>
+      <button id="heroNext" aria-label="Diapositive suivante"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Dots -->
+    <div class="hero-dots" id="heroDots"></div>
+
+  </section><!-- /.hero-slider -->
+
+
+  <!-- ════════════════════════════════════════
+  <!-- ════════════════════════════════════════
+       À PROPOS
+       ════════════════════════════════════════ -->
+  <section class="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Texte -->
+        <div class="about-text anim" style="order: -1;">
+          <span class="section-eyebrow">À propos de nous</span>
+          <h2 class="section-title">« Nettoyer autrement »</h2>
+          <p>HPCI-SARL offre à sa clientèle un produit efficient. Dans cette optique, HPCI-SARL a procédé à la
+            diversification de ses prestations mises à la disposition de sa clientèle.</p>
+          <p>Aujourd'hui, HPCI-SARL intervient dans les divers segments du nettoyage — aussi bien industrial que
+            domestique — en passant par l'assainissement de l'environnement. Nos équipements innovants confèrent une
+            efficience effective à notre démarche.</p>
+          <ul class="about-list">
+            <li>Nettoyage industriel certifié et conforme</li>
+            <li>Personnel formé aux normes HSE internationales</li>
+            <li>Interventions rapides sur Abidjan, Pointe-Noire et Brazzaville</li>
+            <li>Équipements haute performance de dernière génération</li>
+          </ul>
+          <div>
+            <a href="pages/a-propos.html" class="btn-primary">En savoir plus <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <!-- Visuel -->
+        <div class="about-img-wrap anim">
+          <div class="about-img">
+            <img src="./images/services/nettoyage-industrielle.jpg" alt="Équipe HPCI en intervention">
+          </div>
+          <div class="about-badge">
+            <div class="about-badge-num">10+</div>
+            <div class="about-badge-text">Années de rigueur</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       NOS SERVICES
+       ════════════════════════════════════════ -->
+  <section class="services-section">
+    <div class="container">
+      <div class="services-header">
+        <div>
+          <span class="section-eyebrow">Nos expertises techniques</span>
+          <h2 class="section-title" style="margin-bottom:0;">Des services de haute qualité</h2>
+        </div>
+        <a href="pages/services.html" class="btn-dark">Voir tous les services <i
+            class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card anim">
+          <div class="service-thumb">
+            <img src="./images/services/nettoyage-industrielle.jpg" alt="Nettoyage Industriel">
+          </div>
+          <div class="service-body">
+            <div class="service-icon"><i class="fa-solid fa-industry"></i></div>
+            <h3>Nettoyage Industriel</h3>
+            <p>Expertise pointue en milieux critiques : raffineries, plateformes pétrolières et sites de production.</p>
+            <a href="pages/service-nettoyage-industriel.html" class="service-link">En savoir plus <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card anim">
+          <div class="service-thumb">
+            <img src="./images/services/maintenance-industrielle.jpg" alt="Maintenance Industrielle">
+          </div>
+          <div class="service-body">
+            <div class="service-icon"><i class="fa-solid fa-gear"></i></div>
+            <h3>Maintenance Industrielle</h3>
+            <p>Entretien préventif et curatif de vos équipements pour une disponibilité maximale et des coûts maîtrisés.
+            </p>
+            <a href="pages/service-maintenance.html" class="service-link">En savoir plus <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card anim">
+          <div class="service-thumb">
+            <img src="./images/services/nettoyage-pro.jpg" alt="Nettoyage Professionnel">
+          </div>
+          <div class="service-body">
+            <div class="service-icon"><i class="fa-solid fa-broom"></i></div>
+            <h3>Nettoyage Professionnel</h3>
+            <p>Solutions d'entretien pour bureaux, espaces commerciaux et sites logistiques à haute fréquentation.</p>
+            <a href="pages/service-nettoyage-pro.html" class="service-link">En savoir plus <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card anim">
+          <div class="service-thumb">
+            <img src="./images/services/phyto.jpg" alt="Phytosanitaire">
+          </div>
+          <div class="service-body">
+            <div class="service-icon"><i class="fa-solid fa-leaf"></i></div>
+            <h3>Traitement Phytosanitaire</h3>
+            <p>Protection de vos sites contre les nuisibles, désinsectisation et assainissement environnemental durable.
+            </p>
+            <a href="pages/service-phytosanitaire.html" class="service-link">En savoir plus <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card anim">
+          <div class="service-thumb">
+            <img src="./images/services/HSE.jpg" alt="Personnel HSE">
+          </div>
+          <div class="service-body">
+            <div class="service-icon"><i class="fa-solid fa-hard-hat"></i></div>
+            <h3>Personnel HSE</h3>
+            <p>Mise à disposition de professionnels qualifiés en santé, sécurité et environnement pour vos chantiers.
+            </p>
+            <a href="pages/service-hse.html" class="service-link">En savoir plus <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card anim">
+          <div class="service-thumb">
+            <img src="./images/services/maintenance-industrielle.jpg" alt="Engineering">
+          </div>
+          <div class="service-body">
+            <div class="service-icon"><i class="fa-solid fa-drafting-compass"></i></div>
+            <h3>Engineering</h3>
+            <p>Bureau d'études, audit technique et solutions d'ingénierie pour optimiser vos installations
+              industrielles.</p>
+            <a href="pages/service-engineering.html" class="service-link">En savoir plus <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  BARRE CHIFFRES CLÉS
+  ════════════════════════════════════════ -->
+  <div class="figures-bar">
+    <div class="figures-inner">
+      <div class="figure-item">
+        <div class="figure-num">10<span>+</span></div>
+        <div class="figure-label">Années d'expertise</div>
+      </div>
+      <div class="figure-item">
+        <div class="figure-num">3</div>
+        <div class="figure-label">Implantations nationales</div>
+      </div>
+      <div class="figure-item">
+        <div class="figure-num">50<span>+</span></div>
+        <div class="figure-label">Clients fidélisés</div>
+      </div>
+      <div class="figure-item">
+        <div class="figure-num">7</div>
+        <div class="figure-label">Domaines d'expertise</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════
+       PARTENAIRES — défilement
+       ════════════════════════════════════════ -->
+  <section class="partners-section">
+    <div class="partners-header">
+      <div class="partners-label">Ils nous font confiance</div>
+    </div>
+    <div class="partners-marquee">
+      <div class="partners-track" id="partnersTrack">
+        <a href="#" class="partner-item"><img src="./images/partenaires/alucongo.jpeg" alt="ALUCONGO"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/beac.jpeg" alt="BEAC"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/banque-postale.jpeg"
+            alt="LA BANQUE POSTALE"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/brasco.jpeg" alt="BRASCO"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/cec.jpeg" alt="CEC"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/coraf.jpeg" alt="CORAF"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/eni.jpeg" alt="ENI"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/groupe-ndouna.jpeg" alt="GROUPE NDOUNA"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/mucodec.jpeg" alt="MUCODEC"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/saris-congo.jpeg" alt="SARIS CONGO"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/sodexo.jpeg" alt="SODEXO"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/snpc.jpeg" alt="SNPC"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/total-energies.jpeg" alt="TOTAL ENERGIES"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/weatherford.jpeg" alt="WEATHERFORD"></a>
+        <!-- Duplicate for infinite loop -->
+        <a href="#" class="partner-item"><img src="./images/partenaires/alucongo.jpeg" alt="ALUCONGO"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/beac.jpeg" alt="BEAC"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/banque-postale.jpeg"
+            alt="LA BANQUE POSTALE"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/brasco.jpeg" alt="BRASCO"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/cec.jpeg" alt="CEC"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/coraf.jpeg" alt="CORAF"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/eni.jpeg" alt="ENI"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/groupe-ndouna.jpeg" alt="GROUPE NDOUNA"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/mucodec.jpeg" alt="MUCODEC"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/saris-congo.jpeg" alt="SARIS CONGO"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/sodexo.jpeg" alt="SODEXO"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/snpc.jpeg" alt="SNPC"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/total-energies.jpeg" alt="TOTAL ENERGIES"></a>
+        <a href="#" class="partner-item"><img src="./images/partenaires/weatherford.jpeg" alt="WEATHERFORD"></a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       TÉMOIGNAGES
+       ════════════════════════════════════════ -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:48px;" class="anim">
+        <span class="section-eyebrow">Témoignages clients</span>
+        <h2 class="section-title">Ce que disent nos clients</h2>
+      </div>
+
+      <div class="testimonials-grid anim">
+        <!-- Visuel gauche -->
+        <div class="testimonials-visual">
+          <div class="testimonials-visual-caption">
+            <strong>100%</strong>
+            <span>de satisfaction client</span>
+          </div>
+        </div>
+
+        <!-- Slider droit -->
+        <div class="testimonials-content">
+          <div class="quote-icon">&ldquo;</div>
+
+          <div class="testimonials-slider">
+            <div class="testimonials-track" id="testimonialTrack">
+
+              <div class="testimonial-slide">
+                <p class="testimonials-text">Service exceptionnel, résultats remarquables, équipe dévouée. Une
+                  expérience client inégalée, je recommande vivement leur professionnalisme fiable et leur sérieux hors
+                  pair.</p>
+                <div class="testimonial-user">
+                  <div class="testimonial-avatar"><img src="./images/equipe/user.jpg" alt="Frank Kouadio"></div>
+                  <div>
+                    <h4>Frank Kouadio</h4>
+                    <p>Chef de Service Logistique</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-slide">
+                <p class="testimonials-text">Impeccable, délais respectés, qualité exceptionnelle. Une entreprise sur
+                  laquelle vous pouvez compter en toute confiance. Je recommande fortement leurs services.</p>
+                <div class="testimonial-user">
+                  <div class="testimonial-avatar"><img src="./images/equipe/user.jpg" alt="Konan Marcel"></div>
+                  <div>
+                    <h4>Konan Marcel</h4>
+                    <p>Cadre de banque / Responsable Maintenance</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-slide">
+                <p class="testimonials-text">Professionnalisme exceptionnel, réponses rapides, satisfaction totale. Une
+                  entreprise digne de confiance, je les recommande sans hésitation à tous mes partenaires.</p>
+                <div class="testimonial-user">
+                  <div class="testimonial-avatar"><img src="./images/equipe/user.jpg" alt="Koua Désiré"></div>
+                  <div>
+                    <h4>Koua Désiré</h4>
+                    <p>Informaticien / Gestionnaire Infrastructure</p>
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- /.testimonials-track -->
+          </div><!-- /.testimonials-slider -->
+
+          <div class="testimonial-nav">
+            <div class="dot active" onclick="gotoSlide(0)"></div>
+            <div class="dot" onclick="gotoSlide(1)"></div>
+            <div class="dot" onclick="gotoSlide(2)"></div>
+          </div>
+        </div><!-- /.testimonials-content -->
+
+      </div><!-- /.testimonials-grid -->
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       BANDE CTA
+       ════════════════════════════════════════ -->
+  <div class="cta-band">
+    <div class="cta-band-inner">
+      <div class="cta-text">
+        <h2>Prêt à travailler avec nous ?</h2>
+        <p>Contactez-nous dès aujourd'hui pour un devis personnalisé et gratuit.</p>
+      </div>
+      <a href="pages/contact.html" class="cta-btn">Demander un devis <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════
+       FOOTER — colonnes, fond marine
+       ════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-grid">
+
+      <!-- Branding -->
+      <div class="footer-brand">
+        <a href="./index.html" class="footer-logo">
+          <img src="./images/logo/logo-hpci.png" alt="HPCI-SARL" style="height:44px; border-radius:2px;">
+        </a>
+        <p>Hygiène Prodige Com International — Spécialiste du nettoyage industriel, de la maintenance et de
+          l'assainissement en Afrique centrale et de l'Ouest.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=61565882327789" target="_blank" aria-label="Facebook"
+            class="sc-facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/hpci-abidjansarl/" target="_blank" aria-label="LinkedIn"
+            class="sc-linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="http://www.tiktok.com/@hpciabidjan.sarl" target="_blank" aria-label="TikTok" class="sc-tiktok"><i
+              class="fa-brands fa-tiktok"></i></a>
+          <a href="http://wa.me/2250706046595" target="_blank" aria-label="WhatsApp" class="sc-whatsapp"><i
+              class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Qui sommes-nous -->
+      <div class="footer-col">
+        <h4>Qui sommes-nous</h4>
+        <ul>
+          <li><a href="pages/a-propos.html">À propos de nous</a></li>
+          <li><a href="pages/engagements.html">Nos engagements</a></li>
+          <li><a href="pages/equipe.html">Notre équipe</a></li>
+          <li><a href="pages/certifications.html">Nos certifications</a></li>
+          <li><a href="pages/partenaires.html">Nos partenaires</a></li>
+        </ul>
+      </div>
+
+      <!-- Nos services -->
+      <div class="footer-col">
+        <h4>Nos services</h4>
+        <ul>
+          <li><a href="pages/service-nettoyage-industriel.html">Nettoyage industriel</a></li>
+          <li><a href="pages/service-maintenance.html">Maintenance industrielle</a></li>
+          <li><a href="pages/service-nettoyage-pro.html">Nettoyage professionnel</a></li>
+          <li><a href="pages/service-bio-nettoyage.html">Bio nettoyage</a></li>
+          <li><a href="pages/service-phytosanitaire.html">Traitement phytosanitaire</a></li>
+          <li><a href="pages/service-hse.html">Personnel HSE</a></li>
+          <li><a href="pages/service-engineering.html">Engineering</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>Nos implantations</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span><strong style="color:rgba(255,255,255,0.6);">Abidjan (Siège)</strong><br>Côte d'Ivoire<br><a
+              href="tel:+2252722240247">+225 27 222 402 47</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span><strong style="color:rgba(255,255,255,0.6);">Pointe-Noire</strong><br>République du Congo<br><a
+              href="tel:+242066652728">+242 066 652 728</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span><strong style="color:rgba(255,255,255,0.6);">Brazzaville</strong><br>République du Congo<br><a
+              href="tel:+242057911680">+242 05 791 16 80</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:contact@hpci-sarl.com">contact@hpci-sarl.com</a>
+        </div>
+      </div>
+
+    </div><!-- /.footer-grid -->
+
+    <div class="footer-bottom">
+      <p>© 2024 HPCI-SARL — Hygiène Prodige Com International. Tous droits réservés.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="pages/contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ════════════════════════════════════════
+       SCRIPTS
+       ════════════════════════════════════════ -->
+  <script>
+    /* ── Mobile Menu ── */
+    function toggleMobileMenu() {
+      const links = document.getElementById('navLinks');
+      links.classList.toggle('mobile-open');
+    }
+
+    /* ── Nav scroll shadow ── */
+    window.addEventListener('scroll', () => {
+      document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    /* Hero slider managed by scripts/hero_slider.js */
+
+    /* ── Testimonial Slider ── */
+    let currentSlide = 0;
+    function gotoSlide(n) {
+      const track = document.getElementById('testimonialTrack');
+      const dots = document.querySelectorAll('.dot');
+      currentSlide = n;
+      track.style.transform = `translateX(-${n * 100}%)`;
+      dots.forEach((dot, i) => dot.classList.toggle('active', i === n));
+    }
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % 3;
+      gotoSlide(currentSlide);
+    }, 7000);
+
+    /* ── Intersection Observer (scroll animations) ── */
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.anim').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos de nous — HPCI-SARL</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .about-main-img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      border-radius: 2px;
+      overflow: hidden;
+      box-shadow: 0 24px 48px rgba(0, 0, 0, 0.08);
+      position: relative;
+    }
+
+    .about-main-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .about-accent-box {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      background: var(--brand-blue);
+      color: var(--white);
+      padding: 32px;
+      border-radius: 2px;
+      box-shadow: 0 16px 32px rgba(2, 8, 228, 0.2);
+    }
+
+    .about-accent-box h3 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .about-accent-box p {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      opacity: 0.9;
+    }
+
+    .highlights {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin: 32px 0;
+    }
+
+    .highlights li {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      font-size: 1.05rem;
+      color: var(--navy);
+      line-height: 1.5;
+      font-weight: 500;
+    }
+
+    .highlights li i {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      background: var(--brand-cyan);
+      color: var(--navy);
+      border-radius: 50%;
+      font-size: 0.75rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    @media(max-width:1024px) {
+      .about-content {
+        grid-template-columns: 1fr;
+      }
+      .about-accent-box {
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body data-root="../">
+
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-inner">
+      <div class="breadcrumb">
+        <a href="../index.html">Accueil</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>À propos de nous</span>
+      </div>
+      <h1>À Propos de HPCI-SARL</h1>
+      <p>Découvrez notre mission et notre engagement quotidien pour garantir la propreté, la santé et la sécurité dans vos environnements de travail.</p>
+    </div>
+    <div class="page-hero-accent"></div>
+  </section>
+
+  <section style="background:var(--white);">
+    <div class="container">
+      <div class="about-content">
+        <div>
+          <div class="about-main-img">
+             <!-- Placeholder using hero image -->
+            <img src="../images/hero/hero-principal.jpg" alt="À propos HPCI">
+            
+            <div class="about-accent-box">
+              <h3>2014</h3>
+              <p>Année de création</p>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <span class="section-eyebrow">Notre histoire globale</span>
+          <h2 class="section-title">Hygiène Prodige Com International</h2>
+          
+          <p class="section-desc" style="color:var(--text); margin-bottom: 24px; font-size: 1.05rem;">
+            En <strong>« Nettoyant autrement »</strong>, HPCI-SARL offre à sa clientèle un produit efficient. Dans cette optique, HPCI-SARL a procédé à la diversification de ses prestations mises à la disposition de sa clientèle.
+          </p>
+          
+          <p class="section-desc" style="color:var(--text); margin-bottom: 24px; font-size: 1.05rem;">
+            Aujourd’hui, HPCI-SARL intervient dans les divers segments du nettoyage. Nos prestations s’adressent aussi bien au segment du nettoyage industriel, qu’à celui du nettoyage domestique en passant par l’assainissement de l’environnement. Pour « nettoyer autrement », HPCI-SARL s’est dotée d’équipements innovants, qui confèrent une efficience effective à sa démarche de nettoyage.
+          </p>
+
+          <p class="section-desc" style="color:var(--text); margin-bottom: 0px; font-size: 1.05rem;">
+            Chacune de nos prestations sont effectuées avec ses équipements haut de gamme. Pour « nettoyer autrement », HPCI-SARL a particulièrement investi dans le renforcement des compétences de son personnel qui lui permet de participer à traduire l’efficience recherchée.
+          </p>
+          
+          <ul class="highlights">
+            <li><i class="fa-solid fa-check"></i> Nettoyage industriel automatisé et sur mesure</li>
+            <li><i class="fa-solid fa-check"></i> Traitement phytosanitaire aux normes certifiées</li>
+            <li><i class="fa-solid fa-check"></i> Qualité et démarche d'excellence garantie</li>
+          </ul>
+
+          <div style="display:flex; gap:16px; flex-wrap: wrap;">
+            <a href="services.html" class="btn-primary" style="background:var(--brand-blue); border-color:var(--brand-blue); color:var(--white);">Nos services</a>
+            <a href="contact.html" class="btn-outline" style="color:var(--navy); border-color:var(--border);">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../components.js"></script>
+  <script> 
+    injectNav('apropos'); 
+    injectFooter(); 
+  </script>
+</body>
+
+</html>

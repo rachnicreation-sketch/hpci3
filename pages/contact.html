@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nous Contacter — HPCI-SARL</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="../style.css">
+<style>
+.contact-layout { display: grid; grid-template-columns: 1fr 480px; gap: 64px; }
+.contact-info { display: flex; flex-direction: column; gap: 24px; }
+.city-card { border: 1px solid var(--border); border-radius: 2px; overflow: hidden; }
+.city-header { background: var(--red); padding: 14px 22px; display: flex; align-items: center; gap: 12px; }
+.city-header h3 { font-family:'Outfit',sans-serif; font-weight:600; color:var(--white); font-size:0.95rem; letter-spacing:.02em; }
+.city-body { padding: 20px 24px; display: flex; flex-direction: column; gap: 10px; }
+.city-row { display: flex; gap: 10px; align-items: flex-start; font-size: 0.86rem; color: var(--muted); line-height: 1.5; }
+.city-row .ico { color: var(--red); flex-shrink: 0; font-size: 0.9rem; margin-top:1px; }
+.city-row a { color: var(--red); text-decoration: none; font-weight: 500; }
+.city-row a:hover { text-decoration: underline; }
+/* FORMULAIRE */
+.contact-form { background: var(--off-white); border-radius: 2px; padding: 40px; border: 1px solid var(--border); }
+.contact-form h3 { font-family:'Outfit',sans-serif; font-weight:700; font-size:1.5rem; color:var(--navy); margin-bottom:6px; }
+.contact-form p { font-size:0.9rem; color:var(--muted); margin-bottom:28px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; font-size: 0.78rem; font-weight: 600; color: var(--navy); margin-bottom: 6px; letter-spacing: .06em; text-transform: uppercase; }
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%; padding: 12px 16px; border: 1px solid var(--border); border-radius: 2px;
+  font-family: 'Outfit',sans-serif; font-size: 0.92rem; color: var(--text);
+  background: var(--white); transition: border-color .2s, box-shadow .2s; outline: none;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+  border-color: var(--red); box-shadow: 0 0 0 3px rgba(227,6,19,.08);
+}
+.form-group textarea { resize: vertical; min-height: 120px; }
+.form-submit {
+  width: 100%; padding: 15px; background: var(--red); color: var(--white);
+  border: none; border-radius: 2px; font-family: 'Outfit',sans-serif;
+  font-size: 0.9rem; font-weight: 600; letter-spacing: .05em;
+  text-transform: uppercase; cursor: pointer; transition: all .2s;
+}
+.form-submit:hover { background: var(--red-dark); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(227,6,19,.3); }
+.form-status { margin-top: 20px; padding: 15px; border-radius: 2px; font-size: 0.9rem; font-weight: 500; display: none; }
+.form-status.success { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; display: block; }
+.form-status.error { background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; display: block; }
+.social-links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+.social-link {
+  display: flex; align-items: center; gap: 8px; padding: 10px 18px;
+  border: 1px solid var(--border); border-radius: 2px; color: var(--text);
+  text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: all .2s;
+}
+.social-link:hover { border-color: var(--red); color: var(--red); background: #fff5f5; }
+@media(max-width:1024px){ .contact-layout{grid-template-columns:1fr;} .form-row{grid-template-columns:1fr;} }
+</style>
+</head>
+<body data-root="../">
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div><div class="page-hero-pattern"></div><div class="page-hero-bar"></div>
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="../index.html">Accueil</a><span>›</span><span>Nous contacter</span></div>
+    <h1>Nous Contacter</h1>
+    <p>Une question, un projet, un devis ? Notre équipe est disponible pour vous répondre dans les meilleurs délais.</p>
+  </div>
+</section>
+
+<section style="background:var(--white);">
+  <div class="container">
+    <div class="contact-layout">
+      <!-- INFOS DE CONTACT -->
+      <div>
+        <span class="section-label">Nos bureaux</span>
+        <h2 class="section-title" style="margin-bottom:32px;">Retrouvez-nous</h2>
+
+        <div class="city-card anim">
+          <div class="city-header"><span><i class="fa-solid fa-city"></i></span><h3>Pointe-Noire — République du Congo</h3></div>
+          <div class="city-body">
+            <div class="city-row"><span class="ico"><i class="fa-solid fa-location-dot"></i></span><span>Croisement des Avenues Agostino-Neto Monseigneur Godefroy PWATY, Ex Bâtiment CFCO en face du Restaurant le SILMANDE, Centre-ville Pointe-Noire</span></div>
+            <div class="city-row"><span class="ico"><i class="fa-solid fa-phone"></i></span><span><a href="tel:+242066652728">(+242) 06 665 27 28</a></span></div>
+            <div class="city-row"><span class="ico"><i class="fa-solid fa-phone"></i></span><span><a href="tel:+242055209188">(+242) 05 520 91 88</a></span></div>
+            <div class="city-row"><span class="ico"><i class="fa-solid fa-envelope"></i></span><a href="mailto:hygieneprodige@hpci-sarl.net">hygieneprodige@hpci-sarl.net</a></div>
+          </div>
+        </div>
+
+        <div class="city-card anim" style="margin-top:20px;">
+          <div class="city-header"><span><i class="fa-solid fa-city"></i></span><h3>Brazzaville — République du Congo</h3></div>
+          <div class="city-body">
+            <div class="city-row"><span class="ico"><i class="fa-solid fa-location-dot"></i></span><span>Avenue Felix Eboué en face de l'ambassade de Russie, Centre-ville Brazzaville</span></div>
+            <div class="city-row"><span class="ico"><i class="fa-solid fa-phone"></i></span><a href="tel:+242044378055">(+242) 04 437 80 55</a></div>
+            <div class="city-row"><span class="ico"><i class="fa-solid fa-envelope"></i></span><a href="mailto:hygieneprodige.bzv@hpci-sarl.net">hygieneprodige.bzv@hpci-sarl.net</a></div>
+          </div>
+        </div>
+
+        <div class="city-card anim" style="margin-top:20px;">
+          <div class="city-header"><span><i class="fa-solid fa-city"></i></span><h3>Abidjan — Côte d'Ivoire</h3></div>
+          <div class="city-body">
+            <div class="city-row"><span class="ico"><i class="fa-solid fa-location-dot"></i></span><span>Rue C20 - Marcellin Yacé, Cité des arts Cocody, Abidjan</span></div>
+            <div class="city-row"><span class="ico"><i class="fa-solid fa-phone"></i></span><span><a href="tel:+2252722240247">(+225) 27 22 24 02 47</a></span></div>
+            <div class="city-row"><span class="ico"><i class="fa-solid fa-phone"></i></span><span><a href="tel:+2250706046595">(+225) 07 06 04 65 95</a></span></div>
+            <div class="city-row"><span class="ico"><i class="fa-solid fa-envelope"></i></span><a href="mailto:info@hpci-sarl.net">info@hpci-sarl.net</a></div>
+          </div>
+        </div>
+
+        <div style="margin-top:32px;">
+          <h4 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;color:var(--navy);margin-bottom:16px;font-size:1.1rem;">Suivez-nous sur les réseaux</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61565882327789" target="_blank" class="social-link"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href="https://www.linkedin.com/company/hpci-abidjansarl/" target="_blank" class="social-link"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="http://www.tiktok.com/@hpciabidjan.sarl" target="_blank" class="social-link"><i class="fa-brands fa-tiktok"></i> TikTok</a>
+            <a href="http://wa.me/2250706046595" target="_blank" class="social-link"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORMULAIRE DE CONTACT -->
+      <div class="contact-form anim">
+        <h3>Envoyer un Message</h3>
+        <p>Remplissez le formulaire ci-dessous et nous vous répondrons dans les 24 heures.</p>
+        <div id="formStatus" class="form-status"></div>
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="prenom">Prénom *</label>
+              <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+            </div>
+            <div class="form-group">
+              <label for="nom">Nom *</label>
+              <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="+242 00 000 00 00">
+          </div>
+          <div class="form-group">
+            <label for="bureau">Bureau le plus proche</label>
+            <select id="bureau" name="bureau">
+              <option value="">Sélectionner un bureau</option>
+              <option value="pointe-noire">Pointe-Noire (Congo)</option>
+              <option value="brazzaville">Brazzaville (Congo)</option>
+              <option value="abidjan">Abidjan (Côte d'Ivoire)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="service">Service demandé</label>
+            <select id="service" name="service">
+              <option value="">Sélectionner un service</option>
+              <option value="nettoyage-industriel">Nettoyage industriel</option>
+              <option value="maintenance">Maintenance industrielle</option>
+              <option value="nettoyage-pro">Nettoyage professionnel</option>
+              <option value="bio-nettoyage">Bio nettoyage hospitalier</option>
+              <option value="phytosanitaire">Traitement phytosanitaire</option>
+              <option value="hse">Personnel HSE</option>
+              <option value="engineering">Engineering</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" placeholder="Décrivez votre besoin..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Envoyer le message →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="../components.js"></script>
+<script>
+  injectNav('contact');
+  injectFooter();
+
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const form = this;
+    const status = document.getElementById('formStatus');
+    const submitBtn = form.querySelector('.form-submit');
+    const originalBtnText = submitBtn.innerText;
+
+    // Loading state
+    submitBtn.disabled = true;
+    submitBtn.innerText = 'Envoi en cours...';
+    status.className = 'form-status';
+    status.style.display = 'none';
+
+    const formData = new FormData(form);
+
+    fetch('process_contact.php', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      if(data.success) {
+        status.innerText = data.message;
+        status.className = 'form-status success';
+        form.reset();
+      } else {
+        status.innerText = data.message;
+        status.className = 'form-status error';
+      }
+    })
+    .catch(error => {
+      status.innerText = 'Une erreur de réseau est survenue. Veuillez réessayer.';
+      status.className = 'form-status error';
+    })
+    .finally(() => {
+      submitBtn.disabled = false;
+      submitBtn.innerText = originalBtnText;
+    });
+  });
+</script>
+</body>
+</html>

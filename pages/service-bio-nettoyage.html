@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bio Nettoyage Hospitalier — HPCI-SARL</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="../style.css">
+<style>
+.service-layout { display: grid; grid-template-columns: 1fr 340px; gap: 48px; }
+.service-main-img { width: 100%; aspect-ratio: 16/9; border-radius: 2px; overflow: hidden; margin-bottom: 32px; background: url('../images/services/nettoyage-bio.jpg') center/cover no-repeat; box-shadow: 0 10px 40px rgba(10,22,40,0.05); }
+    .video-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 40px 0; }
+    .video-card { background: var(--black); border-radius: 2px; overflow: hidden; position: relative; aspect-ratio: 16/9; }
+    .video-card video { width: 100%; height: 100%; object-fit: cover; }
+    
+    .equip-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; margin-top: 40px; }
+    .equip-card { background: var(--white); border-radius: 2px; overflow: hidden; border: 1px solid var(--border); transition: all .3s; }
+    .equip-card:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(0,0,0,0.08); border-color: var(--red); }
+    .equip-img { width: 100%; height: 200px; overflow: hidden; background: #f8fafc; }
+    .equip-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+    .equip-card:hover .equip-img img { transform: scale(1.1); }
+    .equip-info { padding: 20px; }
+    .equip-info h4 { font-family:'Outfit',sans-serif; font-weight: 700; color: var(--navy); text-transform: uppercase; margin-bottom: 8px; }
+    
+    .sidebar-card { background: var(--off-white); border-radius: 2px; padding: 32px; margin-bottom: 24px; border: 1px solid var(--border); }
+.contact-sidebar { background: var(--navy); border-radius: 2px; padding: 32px; text-align: center; color: white; }
+@media(max-width:1024px){ .service-layout{grid-template-columns:1fr;} .sidebar{order:-1;} }
+</style>
+</head>
+<body data-root="../">
+
+<section class="page-hero" style="--bg-url: url('../images/services/nettoyage-bio.jpg');">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="../index.html">Accueil</a><span>›</span><a href="services.html">Services</a><span>›</span><span>Bio Nettoyage</span></div>
+    <h1>Bio nettoyage en milieu hospitalier</h1>
+    <p>Une technique de nettoyage respectueuse de l’environnement, utilisant des produits biologiques pour un haut niveau d’hygiène.</p>
+  </div>
+  <div class="page-hero-accent"></div>
+</section>
+
+  <section style="background:var(--white);">
+  <div class="container">
+    <div class="service-layout">
+      <!-- CONTENU PRINCIPAL -->
+      <div class="anim">
+        <div class="service-main-img"></div>
+
+        <span class="section-label">Expertise Sanitaire</span>
+        <h2 class="section-title">Normes d'Hygiène Hospitalières</h2>
+        <p class="section-desc">Le bio-nettoyage en milieu hospitalier est une pratique cruciale pour maintenir des normes d’hygiène élevées et réduire les risques d'infections nosocomiales. Notre approche repose sur l’utilisation de produits biodégradables minimisant l’impact sur les patients et le personnel.</p>
+
+        <h3 class="section-title" style="font-size: 1.4rem; margin-top: 40px;">Démonstrations Vidéos</h3>
+        <div class="video-grid">
+          <div class="video-card anim">
+            <video controls poster="../images/services/bio-1.jpg">
+              <source src="../videos/services/bio-1.mov" type="video/quicktime">
+              Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+          </div>
+          <div class="video-card anim">
+            <video controls poster="../images/services/bio-2.jpg">
+              <source src="../videos/services/bio-2.mov" type="video/quicktime">
+              Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+          </div>
+        </div>
+
+        <h3 class="section-title" style="font-size: 1.4rem; margin-top: 40px;">Expertise en Images</h3>
+        <div class="equip-grid">
+          <div class="equip-card anim">
+            <div class="equip-img"><img src="../images/services/bio-1.jpg" alt="Désinfection vapeur"></div>
+            <div class="equip-info"><h4>Désinfection Vapeur</h4></div>
+          </div>
+          <div class="equip-card anim">
+            <div class="equip-img"><img src="../images/services/bio-2.jpg" alt="Protocole strict"></div>
+            <div class="equip-info"><h4>Protocoles de décontamination</h4></div>
+          </div>
+          <div class="equip-card anim">
+            <div class="equip-img"><img src="../images/services/bio-3.jpg" alt="Nettoyage précision"></div>
+            <div class="equip-info"><h4>Nettoyage Haute Précision</h4></div>
+          </div>
+        </div>
+
+        <div style="margin-top: 50px;">
+          <h3 class="section-title" style="font-size: 1.4rem;">Nos Engagements en Milieu Hospitalier</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px; margin-top: 20px;">
+            <li style="display: flex; gap: 12px; align-items: baseline;"><span style="color: var(--red); font-weight: 800;">›</span> Utilisation de produits certifiés biodégradables et respectueux de la santé.</li>
+            <li style="display: flex; gap: 12px; align-items: baseline;"><span style="color: var(--red); font-weight: 800;">›</span> Formation continue des agents aux protocoles d'asepsie spécifiques.</li>
+            <li style="display: flex; gap: 12px; align-items: baseline;"><span style="color: var(--red); font-weight: 800;">›</span> Traçabilité complète des opérations de nettoyage et de désinfection.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+        <div class="sidebar-card">
+          <h4 style="font-family:'Outfit',sans-serif; font-weight: 700; border-bottom: 2px solid var(--red); padding-bottom: 15px; margin-bottom: 20px;">Nos Expertises</h4>
+          <ul class="sidebar-nav">
+            <li><a href="service-nettoyage-industriel.html">Nettoyage Industriel</a></li>
+            <li><a href="service-maintenance.html">Maintenance Industrielle</a></li>
+            <li><a href="service-nettoyage-pro.html">Nettoyage Professionnel</a></li>
+            <li><a href="service-bio-nettoyage.html" class="active">Bio Nettoyage</a></li>
+            <li><a href="service-phytosanitaire.html">Phytosanitaire</a></li>
+            <li><a href="service-hse.html">Personnel HSE</a></li>
+            <li><a href="service-engineering.html">Engineering</a></li>
+          </ul>
+        </div>
+
+        <div class="contact-sidebar">
+          <h4>Besoin d'un Service QHSE ?</h4>
+          <p style="margin: 16px 0 24px;">Confiez-nous l'hygiène de vos espaces de santé pour une sécurité maximale.</p>
+          <a href="contact.html" class="btn-primary" style="width: 100%; justify-content: center;">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="../components.js"></script>
+<script>
+  injectNav('bio_nettoyage');
+  injectFooter();
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.anim').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
+
+
+
+

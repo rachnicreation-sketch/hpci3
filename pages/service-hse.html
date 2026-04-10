@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personnel HSE — HPCI-SARL</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="../style.css">
+<style>
+.service-layout { display: grid; grid-template-columns: 1fr 340px; gap: 48px; }
+.service-main-img { width: 100%; aspect-ratio: 16/9; border-radius: 2px; overflow: hidden; margin-bottom: 32px; background: url('../images/services/HSE.jpg') center/cover no-repeat; box-shadow: 0 10px 40px rgba(10,22,40,0.05); }
+    .equip-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; margin-top: 40px; }
+    .equip-card { background: var(--white); border-radius: 2px; overflow: hidden; border: 1px solid var(--border); transition: all .3s; }
+    .equip-card:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(0,0,0,0.08); border-color: var(--red); }
+    .equip-img { width: 100%; height: 240px; overflow: hidden; background: #f8fafc; }
+    .equip-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+    .equip-card:hover .equip-img img { transform: scale(1.1); }
+    .equip-info { padding: 24px; }
+    .equip-info h4 { font-family:'Outfit',sans-serif; font-weight: 700; color: var(--navy); text-transform: uppercase; margin-bottom: 8px; }
+    
+    .sidebar-card { background: var(--off-white); border-radius: 2px; padding: 32px; margin-bottom: 24px; border: 1px solid var(--border); }
+.contact-sidebar { background: var(--navy); border-radius: 2px; padding: 32px; text-align: center; color: white; }
+@media(max-width:1024px){ .service-layout{grid-template-columns:1fr;} .sidebar{order:-1;} }
+</style>
+</head>
+<body data-root="../">
+
+<section class="page-hero" style="--bg-url: url('../images/services/HSE.jpg');">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="../index.html">Accueil</a><span>›</span><a href="services.html">Services</a><span>›</span><span>Personnel HSE</span></div>
+    <h1>Mise à disposition du personnel HSE</h1>
+    <p>Des professionnels hautement qualifiés pour garantir des conditions de travail sûres et conformes aux normes réglementaires.</p>
+  </div>
+  <div class="page-hero-accent"></div>
+</section>
+
+  <section style="background:var(--white);">
+  <div class="container">
+    <div class="service-layout">
+      <!-- CONTENU PRINCIPAL -->
+      <div class="anim">
+        <div class="service-main-img"></div>
+
+        <span class="section-label">Expertise & Conformité</span>
+        <h2 class="section-title">Gestion de la Santé & Sécurité</h2>
+        <p class="section-desc">Nos experts en HSE interviennent pour évaluer les risques, développer des politiques et procédures, former le personnel et assurer la conformité réglementaire. Ils jouent un rôle crucial dans la prévention des accidents et la préservation de l’environnement.</p>
+
+        <h3 class="section-title" style="font-size: 1.4rem; margin-top: 40px;">Expertise en Action</h3>
+        <div class="equip-grid">
+          <div class="equip-card anim">
+            <div class="equip-img"><img src="../images/services/hse-1.jpg" alt="Équipe HSE"></div>
+            <div class="equip-info">
+              <h4>Évaluation des Risques</h4>
+              <p>Analyse approfondie des postes de travail et mise en place de mesures préventives adaptées à vos sites.</p>
+            </div>
+          </div>
+          <div class="equip-card anim">
+            <div class="equip-img"><img src="../images/services/hse-2.jpg" alt="Formation Sécurité"></div>
+            <div class="equip-info">
+              <h4>Conformité & Formation</h4>
+              <p>Mise à jour régulière des protocoles de sécurité et formation continue des équipes aux bonnes pratiques.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 50px;">
+          <h3 class="section-title" style="font-size: 1.4rem;">Pourquoi externaliser vos experts HSE ?</h3>
+          <p style="margin-top: 16px;">En optant pour notre service de mise à disposition, vous bénéficiez d’une expertise spécialisée adaptée à vos exigences techniques et environnementales.</p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px; margin-top: 20px;">
+            <li style="display: flex; gap: 12px; align-items: baseline;"><span style="color: var(--red); font-weight: 800;">›</span> Flexibilité opérationnelle totale selon vos phases de projet.</li>
+            <li style="display: flex; gap: 12px; align-items: baseline;"><span style="color: var(--red); font-weight: 800;">›</span> Accès à des profils hautement qualifiés et certifiés.</li>
+            <li style="display: flex; gap: 12px; align-items: baseline;"><span style="color: var(--red); font-weight: 800;">›</span> Concentration de vos équipes internes sur votre cœur de métier.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+        <div class="sidebar-card">
+          <h4 style="font-family:'Outfit',sans-serif; font-weight: 700; border-bottom: 2px solid var(--red); padding-bottom: 15px; margin-bottom: 20px;">Nos Expertises</h4>
+          <ul class="sidebar-nav">
+            <li><a href="service-nettoyage-industriel.html">Nettoyage Industriel</a></li>
+            <li><a href="service-maintenance.html">Maintenance Industrielle</a></li>
+            <li><a href="service-nettoyage-pro.html">Nettoyage Professionnel</a></li>
+            <li><a href="service-bio-nettoyage.html">Bio Nettoyage</a></li>
+            <li><a href="service-phytosanitaire.html">Phytosanitaire</a></li>
+            <li><a href="service-hse.html" class="active">Personnel HSE</a></li>
+            <li><a href="service-engineering.html">Engineering</a></li>
+          </ul>
+        </div>
+
+        <div class="contact-sidebar">
+          <h4>Besoin de Renfort ?</h4>
+          <p style="margin: 16px 0 24px;">Trouvez le profil HSE adapté à vos besoins spécifiques.</p>
+          <a href="contact.html" class="btn-primary" style="width: 100%; justify-content: center;">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="../components.js"></script>
+<script>
+  injectNav('hse');
+  injectFooter();
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.anim').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
+
+
+
+

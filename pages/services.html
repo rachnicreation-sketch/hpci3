@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos Services — HPCI-SARL</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="../style.css">
+  <style>
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .svc {
+      background: var(--white);
+      border-radius: 2px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: all .3s;
+    }
+
+    .svc:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 48px rgba(10, 22, 40, .1);
+    }
+
+    .svc-thumb {
+      width: 100%;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .svc-body {
+      padding: 24px;
+    }
+
+    .svc-body h3 {
+      font-family:'Outfit',sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .svc-body p {
+      font-size: 0.86rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .svc-link {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--navy);
+      text-decoration: none;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .svc-link:hover {
+      text-decoration: underline;
+    }
+
+    @media(max-width:1024px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media(max-width:640px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body data-root="../">
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+<div class="page-hero-bg"></div>
+<div class="page-hero-bg"></div>
+    <div class="page-hero-inner">
+      <div class="breadcrumb"><a href="../index.html">Accueil</a><span>›</span><span>Nos services</span></div>
+      <h1>Nos Services</h1>
+      <p>Une gamme complète de prestations d'hygiène, de nettoyage industriel et d'assainissement pour tous vos besoins
+        professionnels.</p>
+    </div>
+  <div class="page-hero-accent"></div>
+</section>
+
+  <section style="background:var(--off-white);">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:0;">
+        <span class="section-label">Domaines de compétence</span>
+        <h2 class="section-title">Nos 7 Expertises au Votre Service</h2>
+      </div>
+      <div class="services-grid">
+        <div class="svc anim">
+          <div class="svc-thumb" style="background-image: url('../images/services/nettoyage-industrielle.jpg');"></div>
+          <div class="svc-body">
+            <h3>Nettoyage Industriel</h3>
+            <p>Nettoyage & traitement des espaces confinées</p>
+            <p>Néttoyage des bacs à hydrocarbure & bassins API</p>
+            <p>Traitement de la pollution marine</p>
+            <a href="service-nettoyage-industriel.html" class="svc-link">En
+              savoir plus ?</a>
+          </div>
+        </div>
+        <div class="svc anim">
+          <div class="svc-thumb" style="background-image: url('../images/services/maintenance-industrielle.jpg');"></div>
+          <div class="svc-body">
+            <h3>Maintenance Industrielle & Équipements</h3>
+            <p>Entretien spécialisé des installations industrielles et équipements pour assurer leur fonctionnement
+              optimal et prolonger leur durée de vie.</p><a href="service-maintenance.html" class="svc-link">En savoir
+              plus ?</a>
+          </div>
+        </div>
+        <div class="svc anim">
+          <div class="svc-thumb" style="background-image: url('../images/services/nettoyage-pro.jpg');"></div>
+          <div class="svc-body">
+            <h3>Nettoyage Professionnel & Entretien</h3>
+            <p>Services experts assurant la propreté et la maintenance régulière, préservant l'esthétique et la
+              durabilité des espaces et installations.</p><a href="service-nettoyage-pro.html" class="svc-link">En
+              savoir plus ?</a>
+          </div>
+        </div>
+        <div class="svc anim">
+          <div class="svc-thumb" style="background-image: url('../images/services/bio-1.jpg');"></div>
+          <div class="svc-body">
+            <h3>Bio Nettoyage en Milieu Hospitalier</h3>
+            <p>Technique respectueuse de l'environnement, utilisant des produits biologiques, pour maintenir un haut
+              niveau d'hygiène en milieu hospitalier.</p><a href="service-bio-nettoyage.html" class="svc-link">En savoir
+              plus ?</a>
+          </div>
+        </div>
+        <div class="svc anim">
+          <div class="svc-thumb" style="background-image: url('../images/services/phyto-1.jpg');"></div>
+          <div class="svc-body">
+            <h3>Traitement Phytosanitaire & Assainissement</h3>
+            <p>Méthodes pour éliminer les organismes nuisibles et maintenir un environnement sain, tout en préservant la
+              biodiversité.</p><a href="service-phytosanitaire.html" class="svc-link">En savoir plus ?</a>
+          </div>
+        </div>
+        <div class="svc anim">
+          <div class="svc-thumb" style="background-image: url('../images/services/hse-1.jpg');"></div>
+          <div class="svc-body">
+            <h3>Mise à Disposition Personnel HSE</h3>
+            <p>Fourniture de professionnels en santé, sécurité et environnement pour garantir la conformité
+              réglementaire et la gestion des risques.</p><a href="service-hse.html" class="svc-link">En savoir plus
+              ?</a>
+          </div>
+        </div>
+        <div class="svc anim">
+          <div class="svc-thumb" style="background-image: url('../images/services/eng-1.jpg');"></div>
+          <div class="svc-body">
+            <h3>Engineering</h3>
+            <p>Conception, réalisation et optimisation de systèmes techniques, industriels ou mécaniques adaptés à vos
+              besoins spécifiques.</p><a href="service-engineering.html" class="svc-link">En savoir plus ?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="../components.js"></script>
+  <script> injectNav('services'); injectFooter(); </script>
+</body>
+
+</html>
+
+

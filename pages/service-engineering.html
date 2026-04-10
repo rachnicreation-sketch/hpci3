@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Engineering — HPCI-SARL</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="../style.css">
+<style>
+.service-layout { display: grid; grid-template-columns: 1fr 340px; gap: 48px; }
+.service-main-img { width: 100%; aspect-ratio: 16/9; border-radius: 2px; overflow: hidden; margin-bottom: 32px; background: url('../images/services/engineering.jpg') center/cover no-repeat; box-shadow: 0 10px 40px rgba(10,22,40,0.05); }
+.service-features { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin: 40px 0; }
+.feature-item { border-left: 3px solid var(--red); padding-left: 20px; }
+.feature-item h5 { font-family:'Outfit',sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--navy); margin-bottom: 8px; text-transform: uppercase; }
+.feature-item p { font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
+.sidebar-card { background: var(--off-white); border-radius: 2px; padding: 32px; margin-bottom: 24px; border: 1px solid var(--border); }
+.contact-sidebar { background: var(--navy); border-radius: 2px; padding: 32px; text-align: center; color: white; }
+@media(max-width:1024px){ .service-layout{grid-template-columns:1fr;} .sidebar{order:-1;} }
+</style>
+</head>
+<body data-root="../">
+
+<section class="page-hero" style="--bg-url: url('../images/services/engineering.jpg');">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="../index.html">Accueil</a><span>›</span><a href="services.html">Services</a><span>›</span><span>Engineering</span></div>
+    <h1>Engineering</h1>
+    <p>Le cœur de l’innovation et de la conception pour des solutions industrielles et technologiques performantes.</p>
+  </div>
+  <div class="page-hero-accent"></div>
+</section>
+
+  <section style="background:var(--white);">
+  <div class="container">
+    <div class="service-layout">
+      <!-- CONTENU PRINCIPAL -->
+      <div class="anim">
+        <div class="service-main-img"></div>
+
+        <span class="section-label">Innovation & Conception</span>
+        <h2 class="section-title">L’Ingénierie au Service du Futur</h2>
+        <p class="section-desc">L’engineering est le cœur de l’innovation et de la conception dans de nombreux domaines, de l’industrie à la technologie en passant par l’ingénierie civile. Il s’agit de l’application de principes scientifiques et mathématiques pour concevoir, développer et améliorer des produits, des systèmes et des infrastructures.</p>
+
+        <div class="service-features" style="margin-top: 40px;">
+          <div class="feature-item">
+            <h5>Innovation Technique</h5>
+            <p>Développement de solutions novatrices pour relever les défis techniques les plus complexes de l'industrie moderne.</p>
+          </div>
+          <div class="feature-item">
+            <h5>Expertise Multidisciplinaire</h5>
+            <p>De la conception de machines complexes à la création de réseaux sophistiqués pour répondre aux besoins de la société.</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 50px;">
+          <h3 class="section-title" style="font-size: 1.4rem;">Notre Vision de l'Engineering</h3>
+          <p style="margin-top: 16px;">Nos professionnels travaillent sur des projets d'envergure pour repousser les limites de la technologie et créer des infrastructures durables.</p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 16px; margin-top: 20px;">
+            <li style="display: flex; gap: 12px; align-items: baseline;"><span style="color: var(--red); font-weight: 800;">›</span> Conception assistée par ordinateur de systèmes industriels.</li>
+            <li style="display: flex; gap: 12px; align-items: baseline;"><span style="color: var(--red); font-weight: 800;">›</span> Optimisation mathématique des flux et des structures.</li>
+            <li style="display: flex; gap: 12px; align-items: baseline;"><span style="color: var(--red); font-weight: 800;">›</span> Intégration de technologies intelligentes dans les infrastructures existantes.</li>
+          </ul>
+        </div>
+
+        <h3 class="section-title" style="font-size: 1.6rem; margin-top: 50px;">Compétences d'Ingénierie</h3>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin: 24px 0 40px;">
+          <li style="display: flex; gap: 10px; align-items: baseline;"><span style="color: var(--red); font-weight: 800;">›</span> Conception de Systèmes de Filtration Industrielle</li>
+          <li style="display: flex; gap: 10px; align-items: baseline;"><span style="color: var(--red); font-weight: 800;">›</span> Audits de Performance Énergétique</li>
+          <li style="display: flex; gap: 10px; align-items: baseline;"><span style="color: var(--red); font-weight: 800;">›</span> Plans d'Assainissement Urbain et Industriel</li>
+          <li style="display: flex; gap: 10px; align-items: baseline;"><span style="color: var(--red); font-weight: 800;">›</span> Optimisation des Flux de Maintenance</li>
+        </ul>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+        <div class="sidebar-card">
+          <h4 style="font-family:'Outfit',sans-serif; font-weight: 700; border-bottom: 2px solid var(--red); padding-bottom: 15px; margin-bottom: 20px;">Nos Expertises</h4>
+          <ul class="sidebar-nav">
+            <li><a href="service-nettoyage-industriel.html">Nettoyage Industriel</a></li>
+            <li><a href="service-maintenance.html">Maintenance Industrielle</a></li>
+            <li><a href="service-nettoyage-pro.html">Nettoyage Professionnel</a></li>
+            <li><a href="service-bio-nettoyage.html">Bio Nettoyage</a></li>
+            <li><a href="service-phytosanitaire.html">Phytosanitaire</a></li>
+            <li><a href="service-hse.html">Personnel HSE</a></li>
+            <li><a href="service-engineering.html" class="active">Engineering</a></li>
+          </ul>
+        </div>
+
+        <div class="contact-sidebar">
+          <h4>Vôtre Projet sur Mesure</h4>
+          <p style="margin: 16px 0 24px;">Une expertise multidimensionnelle pour vos défis techniques les plus complexes.</p>
+          <a href="contact.html" class="btn-primary" style="width: 100%; justify-content: center;">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="../components.js"></script>
+<script>
+  injectNav('engineering');
+  injectFooter();
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.anim').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
+
+
+
+

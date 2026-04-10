@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nettoyage Professionnel — HPCI-SARL</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="../style.css">
+<style>
+.service-layout { display: grid; grid-template-columns: 1fr 340px; gap: 48px; }
+.service-main-img { width: 100%; aspect-ratio: 16/9; border-radius: 2px; overflow: hidden; margin-bottom: 32px; background: url('../images/services/nettoyage-pro.jpg') center/cover no-repeat; box-shadow: 0 10px 40px rgba(10,22,40,0.05); }
+    /* -- SERVICE GALLERY -- */
+    .equip-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .equip-card {
+      background: var(--white);
+      border-radius: 2px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: all .3s;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    }
+
+    .equip-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      border-color: var(--red);
+    }
+
+    .equip-img {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      background: #f8fafc;
+    }
+
+    .equip-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s;
+    }
+
+    .equip-card:hover .equip-img img {
+      transform: scale(1.1);
+    }
+
+    .equip-info {
+      padding: 24px;
+      text-align: left;
+    }
+
+    .equip-info h4 {
+      font-family:'Outfit',sans-serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: var(--navy);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      letter-spacing: 0.05em;
+    }
+
+    .equip-info p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .sidebar-card {
+      background: var(--off-white);
+      border-radius: 2px;
+      padding: 32px;
+      margin-bottom: 24px;
+      border: 1px solid var(--border);
+    }
+.contact-sidebar { background: var(--navy); border-radius: 2px; padding: 32px; text-align: center; color: white; }
+@media(max-width:1024px){ .service-layout{grid-template-columns:1fr;} .sidebar{order:-1;} }
+</style>
+</head>
+<body data-root="../">
+
+<section class="page-hero" style="--bg-url: url('../images/services/nettoyage-pro.jpg');">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="../index.html">Accueil</a><span>›</span><a href="services.html">Services</a><span>›</span><span>Nettoyage Professionnel</span></div>
+    <h1>Nettoyage Professionnel et Entretien</h1>
+    <p>Des environnements propres, sains et accueillants pour garantir la productivité, la sécurité et le bien-être de tous.</p>
+  </div>
+  <div class="page-hero-accent"></div>
+</section>
+
+  <section style="background:var(--white);">
+  <div class="container">
+    <div class="service-layout">
+      <!-- CONTENU PRINCIPAL -->
+      <div class="anim">
+        <div class="service-main-img"></div>
+
+        <span class="section-label">Engagement Qualité</span>
+        <h2 class="section-title">Notre Mission d'Excellence</h2>
+        <p class="section-desc">Chez HPCI-SARL, notre mission est de fournir des services de nettoyage et d’entretien de haute qualité pour créer des environnements propres, sains et accueillants pour nos clients. Nous comprenons l’importance de maintenir des espaces impeccables pour la productivité, la sécurité et le bien-être de tous.</p>
+
+        <div class="equip-grid">
+          <!-- Item 1: Vitrerie -->
+          <div class="equip-card anim">
+            <div class="equip-img"><img src="../images/services/net-pro-1.jpg" alt="Nettoyage Vitrerie"></div>
+            <div class="equip-info">
+              <h4>Murs et Espaces vitrés</h4>
+              <p>Nettoyage quotidien ou périodique des bureaux, des salles de réunion et des espaces communs. Époussetage, aspirateur, lavage des sols, décapage et désinfection des surfaces pour une clarté absolue.</p>
+            </div>
+          </div>
+          <!-- Item 2: Commercial -->
+          <div class="equip-card anim">
+            <div class="equip-img"><img src="../images/services/net-pro-2.jpg" alt="Espaces Commerciaux"></div>
+            <div class="equip-info">
+              <h4>Espaces Commerciaux</h4>
+              <p>Nettoyage spécialisé de magasins, restaurants, hôtels et centres commerciaux. Gestion complète des déchets, nettoyage des vitrines et entretien des sols pour une image de marque irréprochable.</p>
+            </div>
+          </div>
+          <!-- Item 3: Station Service -->
+          <div class="equip-card anim">
+            <div class="equip-img"><img src="../images/services/net-pro-3.jpg" alt="Station Service"></div>
+            <div class="equip-info">
+              <h4>Stations Service</h4>
+              <p>HPCI SARL investit dans la technologie de pointe pour nettoyer efficacement les stations. Nous utilisons des dégraissants solvants puissants pour traiter les hydrocarbures sur les pompes et les pistes.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-features" style="margin-top: 48px;">
+          <div class="feature-item">
+            <h5>Nettoyage & Entretien Espaces Professionnels</h5>
+            <p>Services experts assurant la propreté et la maintenance régulière, préservant l’esthétique, la fonctionnalité et la durabilité des espaces et installations professionnelles, commerciales et domestiques.</p>
+          </div>
+          <div class="feature-item">
+            <h5>Nettoyage de Résidences</h5>
+            <p>Entretien minutieux de maisons, d’appartements et de propriétés résidentielles. Nous intervenons sur le nettoyage en profondeur des sols, des salles de bains, des cuisines et de toutes vos pièces de vie.</p>
+          </div>
+        </div>
+
+        <div class="sidebar-card" style="background: var(--navy); color: white; margin-top: 40px; border: none;">
+          <h4 style="color: var(--red); margin-bottom: 12px; font-family:'Outfit',sans-serif; font-size: 1.4rem;">À propos de notre expertise</h4>
+          <p style="font-size: 0.95rem; line-height: 1.6; opacity: 0.9; text-align: justify;">HPCI-Sarl est une entreprise spécialisée dans les prestations d’entretien (espace professionnel et domestique), de nettoyage industriel, de nettoyage des espaces verts (désherbage), d’assainissement et de l’application des 3D (Désinsectisation, Dératisation et Désinfection).</p>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+        <div class="sidebar-card">
+          <h4 style="font-family:'Outfit',sans-serif; font-weight: 700; border-bottom: 2px solid var(--red); padding-bottom: 15px; margin-bottom: 20px;">Nos Expertises</h4>
+          <ul class="sidebar-nav">
+            <li><a href="service-nettoyage-industriel.html">Nettoyage Industriel</a></li>
+            <li><a href="service-maintenance.html">Maintenance Industrielle</a></li>
+            <li><a href="service-nettoyage-pro.html" class="active">Nettoyage Professionnel</a></li>
+            <li><a href="service-bio-nettoyage.html">Bio Nettoyage</a></li>
+            <li><a href="service-phytosanitaire.html">Phytosanitaire</a></li>
+            <li><a href="service-hse.html">Personnel HSE</a></li>
+            <li><a href="service-engineering.html">Engineering</a></li>
+          </ul>
+        </div>
+
+        <div class="contact-sidebar">
+          <h4>Besoin d'un Contrat d'Entretien ?</h4>
+          <p style="margin: 16px 0 24px;">Une solution adaptée à la fréquence de votre choix.</p>
+          <a href="contact.html" class="btn-primary" style="width: 100%; justify-content: center;">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="../components.js"></script>
+<script>
+  injectNav('nettoyage_pro');
+  injectFooter();
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.anim').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
+
+
+
+
