@@ -542,18 +542,17 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.12); }
 /* Hero dots (barres horizontales) */
 .hero-dots {
   position: absolute;
-  bottom: 0px;
+  bottom: 24px;
   left: 0; /* Sous le texte à gauche */
   width: 50%;
   display: flex;
-  gap: 8px;
-  padding: 24px max(48px, calc((100vw - 1280px) / 2 + 48px));
-  background: transparent;
+  justify-content: center;
+  gap: 12px;
   z-index: 20;
 }
 
 .hero-dot {
-  flex: 1; /* S'étend pour former une barre */
+  width: 40px; /* Taille fixe plus petite */
   height: 4px;
   border-radius: 2px;
   background: #E2E8F0;
@@ -565,55 +564,45 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.12); }
   background: var(--brand-blue); /* Ligne rouge TotalEnergies */
 }
 
-/* Hero slider navigation arrows (hidden or moved to edges for clean look) */
-.hero-nav { display: none; } /* On retire les grosses flèches pour plus de pureté */
-
-/* ── KEY FIGURES BAR ── */
-.figures-bar {
-  background: var(--navy);
-  padding: 40px 0;
-  border-bottom: 3px solid var(--brand-cyan);
-}
-.figures-inner {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 48px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
-  background: rgba(255,255,255,0.08);
-}
-.figure-item {
-  padding: 28px 32px;
-  background: var(--navy);
-  text-align: center;
-  position: relative;
-}
-.figure-item::after {
-  content: '';
+/* Hero slider navigation arrows */
+.hero-nav {
   position: absolute;
-  right: 0;
-  top: 20%;
-  bottom: 20%;
-  width: 1px;
-  background: rgba(255,255,255,0.1);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  z-index: 30;
+  pointer-events: none;
 }
-.figure-item:last-child::after { display: none; }
-.figure-num {
-  font-family: 'Outfit', sans-serif;
-  font-size: 2.6rem;
-  font-weight: 800;
+.hero-nav button {
+  pointer-events: all;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: none;
+  background: var(--white);
+  color: var(--navy);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+.hero-nav button:hover {
+  background: var(--brand-blue);
   color: var(--white);
-  line-height: 1;
-  margin-bottom: 6px;
-  letter-spacing: -0.03em;
+  transform: scale(1.05);
+  box-shadow: 0 12px 32px rgba(2, 8, 228, 0.3);
 }
-.figure-num span { color: var(--brand-cyan); }
-.figure-label {
-  font-size: 0.8rem;
-  color: rgba(255,255,255,0.5);
-  font-weight: 500;
-  letter-spacing: 0.06em;
+
+@media(max-width:900px) {
+  .hero-nav { display: none; } /* Hide heavy side arrows on mobile, dots are enough */
+}
   text-transform: uppercase;
 }
 
@@ -917,12 +906,13 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.12); }
   overflow: hidden;
 }
 
-.testimonials-slider { position: relative; flex: 1; }
+.testimonials-slider { position: relative; flex: 1; overflow: hidden; }
 .testimonials-track {
   display: flex;
+  width: 300%; /* Empêche les slides de se superposer/compresser */
   transition: transform 0.6s cubic-bezier(0.645,0.045,0.355,1);
 }
-.testimonial-slide { min-width: 100%; flex: 0 0 100%; }
+.testimonial-slide { width: 33.3333%; flex: 0 0 33.3333%; }
 
 .quote-icon {
   font-size: 4rem;
@@ -1014,11 +1004,10 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.12); }
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.45;
-  filter: grayscale(100%);
+  opacity: 1;
   transition: all 0.3s;
 }
-.partner-item:hover { opacity: 1; filter: grayscale(0%); transform: scale(1.08); }
+.partner-item:hover { transform: scale(1.08); }
 .partner-item img { max-width: 140px; max-height: 56px; object-fit: contain; }
 
 @keyframes marquee {

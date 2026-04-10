@@ -311,26 +311,7 @@
 
   BARRE CHIFFRES CLÉS
   ════════════════════════════════════════ -->
-  <div class="figures-bar">
-    <div class="figures-inner">
-      <div class="figure-item">
-        <div class="figure-num">10<span>+</span></div>
-        <div class="figure-label">Années d'expertise</div>
-      </div>
-      <div class="figure-item">
-        <div class="figure-num">3</div>
-        <div class="figure-label">Implantations nationales</div>
-      </div>
-      <div class="figure-item">
-        <div class="figure-num">50<span>+</span></div>
-        <div class="figure-label">Clients fidélisés</div>
-      </div>
-      <div class="figure-item">
-        <div class="figure-num">7</div>
-        <div class="figure-label">Domaines d'expertise</div>
-      </div>
-    </div>
-  </div>
+
 
 
   <!-- ════════════════════════════════════════
@@ -581,7 +562,8 @@
       const track = document.getElementById('testimonialTrack');
       const dots = document.querySelectorAll('.dot');
       currentSlide = n;
-      track.style.transform = `translateX(-${n * 100}%)`;
+      // Il y a 3 slides, donc on décale de 33.33% par index
+      track.style.transform = `translateX(-${n * 33.333}%)`;
       dots.forEach((dot, i) => dot.classList.toggle('active', i === n));
     }
     setInterval(() => {
