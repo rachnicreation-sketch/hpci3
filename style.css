@@ -542,7 +542,7 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.12); }
 /* Hero dots (barres horizontales) */
 .hero-dots {
   position: absolute;
-  bottom: 24px;
+  bottom: 12px;
   left: 0; /* Sous le texte à gauche */
   width: 50%;
   display: flex;

@@ -1,76 +1,168 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Notre equipe — HPCI-SARL</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-<link rel="stylesheet" href="../style.css">
-<style>
-.team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 32px; margin-top: 48px; }
-.team-member { background: var(--white); border-radius: 2px; border: 1px solid var(--border); overflow: hidden; text-align: center; transition: all 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
-.team-member:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); border-bottom: 3px solid var(--red); }
-.team-img { width: 100%; aspect-ratio: 1; background: var(--off-white); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: var(--muted); border-bottom: 1px solid #eee; overflow: hidden; }
-.team-img img { width: 100%; height: 100%; object-fit: cover; }
-.team-info { padding: 24px; }
-.team-info h3 { font-family: 'Outfit', sans-serif; color: var(--navy); font-size: 1.15rem; font-weight: 700; margin-bottom: 6px; }
-.team-info p { color: var(--muted); font-size: 0.88rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; }
-.team-hero { text-align: center; max-width: 800px; margin: 0 auto; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notre equipe — HPCI-SARL</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 32px;
+      margin-top: 48px;
+    }
+
+    .team-member {
+      background: var(--white);
+      border-radius: 2px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+      text-align: center;
+      transition: all 0.3s;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    }
+
+    .team-member:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+      border-bottom: 3px solid var(--red);
+    }
+
+    .team-img {
+      width: 100%;
+      aspect-ratio: 1;
+      background: var(--off-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      color: var(--muted);
+      border-bottom: 1px solid #eee;
+      overflow: hidden;
+    }
+
+    .team-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .team-info {
+      padding: 24px;
+    }
+
+    .team-info h3 {
+      font-family: 'Outfit', sans-serif;
+      color: var(--navy);
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .team-info p {
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .team-hero {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
 </head>
+
 <body data-root="../">
 
-<section class="page-hero">
-  <div class="page-hero-bg" style="background:var(--navy);"></div>
-  <div class="page-hero-inner">
-    <div class="breadcrumb">
-      <a href="../index.html">Accueil</a>
-      <span class="breadcrumb-sep">/</span>
-      <span>Qui sommes-nous ?</span>
-      <span class="breadcrumb-sep">/</span>
-      <span>Notre equipe</span>
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background:var(--navy);"></div>
+    <div class="page-hero-inner">
+      <div class="breadcrumb">
+        <a href="../index.html">Accueil</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Qui sommes-nous ?</span>
+        <span class="breadcrumb-sep">/</span>
+        <span>Notre equipe</span>
+      </div>
+      <h1>Notre Equipe</h1>
+      <p>Une equipe d'experts devoues a l'excellence operationnelle et environnementale.</p>
     </div>
-    <h1>Notre Equipe</h1>
-    <p>Une equipe d'experts devoues a l'excellence operationnelle et environnementale.</p>
+    <div class="page-hero-accent"></div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="team-hero">
+        <span class="section-eyebrow">Les acteurs de notre reussite</span>
+        <h2 class="section-title">Une direction engagee et sur le terrain</h2>
+        <p class="section-desc" style="margin: 0 auto;">Chez HPCI-SARL, chaque collaborateur est une piece maitresse de
+          notre dispositif d'intervention. Decouvrez les femmes et les hommes qui orchestrent nos operations.</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="team-img"><img src="https://www.hpci-sarl.net/wp-content/uploads/2024/02/dh-hpci.jpeg"
+              alt="Jean Serge Sita" loading="lazy"></div>
+          <div class="team-info">
+            <h3>Jean Serge Sita</h3>
+            <p>Directeur General</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="team-img"><img src="https://www.hpci-sarl.net/wp-content/uploads/2024/02/user.jpg"
+              alt="Richard M'boungou" loading="lazy"></div>
+          <div class="team-info">
+            <h3>Richard M'boungou</h3>
+            <p>Conseiller du DG</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="team-img"><img src="https://www.hpci-sarl.net/wp-content/uploads/2024/02/user.jpg"
+              alt="Milan KISSOUMOUNA" loading="lazy"></div>
+          <div class="team-info">
+            <h3>Milan KISSOUMOUNA</h3>
+            <p>Dir. Finance / Responsable Compta</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="team-img"><img src="https://www.hpci-sarl.net/wp-content/uploads/2024/02/user.jpg"
+              alt="Mme TSIKABAKA Monica" loading="lazy"></div>
+          <div class="team-info">
+            <h3>Mme TSIKABAKA Monica</h3>
+            <p>Resp. Direction & Departements</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="team-img"><img src="https://www.hpci-sarl.net/wp-content/uploads/2024/02/user.jpg"
+              alt="Serge MOULOUMBA" loading="lazy"></div>
+          <div class="team-info">
+            <h3>Serge MOULOUMBA</h3>
+            <p>Directeur des Operations</p>
+          </div>
+        </div>
+  </section>
+
+  <div class="cta-band">
+    <div class="cta-band-inner">
+      <div class="cta-text">
+        <h2>Pret a rejoindre l'aventure ?</h2>
+        <p>Nous sommes toujours a la recherche de nouveaux talents. Consultez nos offres ou contactez-nous.</p>
+      </div>
+      <a href="contact.html" class="cta-btn">Nous contacter <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
   </div>
-  <div class="page-hero-accent"></div>
-</section>
 
-<section>
-  <div class="container">
-    <div class="team-hero">
-      <span class="section-eyebrow">Les acteurs de notre reussite</span>
-      <h2 class="section-title">Une direction engagee et sur le terrain</h2>
-      <p class="section-desc" style="margin: 0 auto;">Chez HPCI-SARL, chaque collaborateur est une piece maitresse de notre dispositif d'intervention. Decouvrez les femmes et les hommes qui orchestrent nos operations.</p>
-    </div>
-
-    <div class="team-grid">
-      <div class="team-member"><div class="team-img"><img src="https://www.hpci-sarl.net/wp-content/uploads/2024/02/dh-hpci.jpeg" alt="Jean Serge Sita" loading="lazy"></div><div class="team-info"><h3>Jean Serge Sita</h3><p>Directeur General</p></div></div>
-      <div class="team-member"><div class="team-img"><img src="https://www.hpci-sarl.net/wp-content/uploads/2024/02/user.jpg" alt="Richard M'boungou" loading="lazy"></div><div class="team-info"><h3>Richard M'boungou</h3><p>Conseiller du DG</p></div></div>
-      <div class="team-member"><div class="team-img"><img src="https://www.hpci-sarl.net/wp-content/uploads/2024/02/user.jpg" alt="Milan KISSOUMOUNA" loading="lazy"></div><div class="team-info"><h3>Milan KISSOUMOUNA</h3><p>Dir. Finance / Responsable Compta</p></div></div>
-      <div class="team-member"><div class="team-img"><img src="https://www.hpci-sarl.net/wp-content/uploads/2024/02/user.jpg" alt="Mme TSIKABAKA Monica" loading="lazy"></div><div class="team-info"><h3>Mme TSIKABAKA Monica</h3><p>Resp. Direction & Departements</p></div></div>
-      <div class="team-member"><div class="team-img"><img src="https://www.hpci-sarl.net/wp-content/uploads/2024/02/user.jpg" alt="Serge MOULOUMBA" loading="lazy"></div><div class="team-info"><h3>Serge MOULOUMBA</h3><p>Directeur des Operations</p></div></div>
-      <div class="team-member"><div class="team-img"><img src="https://www.hpci-sarl.net/wp-content/uploads/2024/02/user.jpg" alt="Stanislas Mouele" loading="lazy"></div><div class="team-info"><h3>Stanislas Mouele</h3><p>Chef Operations & Logistique</p></div></div>
-      <div class="team-member"><div class="team-img"><img src="https://www.hpci-sarl.net/wp-content/uploads/2024/02/user.jpg" alt="Howard Elie Nkabou" loading="lazy"></div><div class="team-info"><h3>Howard Elie Nkabou</h3><p>Superviseur BZV</p></div></div>
-      <div class="team-member"><div class="team-img"><img src="https://www.hpci-sarl.net/wp-content/uploads/2024/02/user.jpg" alt="Ida Tsamoukounou" loading="lazy"></div><div class="team-info"><h3>Ida Tsamoukounou</h3><p>Responsable Agence HPCI</p></div></div>
-    </div>
-  </div>
-</section>
-
-<div class="cta-band">
-  <div class="cta-band-inner">
-    <div class="cta-text">
-      <h2>Pret a rejoindre l'aventure ?</h2>
-      <p>Nous sommes toujours a la recherche de nouveaux talents. Consultez nos offres ou contactez-nous.</p>
-    </div>
-    <a href="contact.html" class="cta-btn">Nous contacter <i class="fa-solid fa-arrow-right"></i></a>
-  </div>
-</div>
-
-<script src="../components.js"></script>
-<script>
-  injectNav('equipe');
-  injectFooter();
-</script>
+  <script src="../components.js"></script>
+  <script>
+    injectNav('equipe');
+    injectFooter();
+  </script>
 </body>
+
 </html>
